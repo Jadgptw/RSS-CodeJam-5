@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Search = () => (
-  <section className="search-page">
-    <h1>Search Page</h1>
-  </section>
-);
+class Search extends Component {
+  state = {
+    member: ''
+  };
+
+  render() {
+    return (
+      <section className="search-page">
+        <h1>Search Page</h1>
+      </section>
+    )
+  }
+}
 
 export default Search;
