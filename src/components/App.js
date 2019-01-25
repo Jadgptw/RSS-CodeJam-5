@@ -18,7 +18,7 @@ class App extends Component{
           <Navigation/>
           <main className="container">
             <Route exact path="/" component={Home}/>
-            <Route path="/member" component={Member}/>
+            <Route path="/member/:lastName/:firstName" component={Member}/>
             <Route path="/search" component={Search}/>
           </main>
         </Fragment>
