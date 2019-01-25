@@ -66,7 +66,11 @@
       "../photographs/borozna/images/borozna_6.jpg",
       "../photographs/borozna/images/borozna_7.jpg"
     ],
-    "video" : "https://www.youtube.com/watch?v=LbXo7o8XtQI"
+    "video" : "https://www.youtube.com/watch?v=LbXo7o8XtQI",
+    "workPlaceCoordinats" : {
+      "x": "53.924496",
+      "y": "27.590185"
+    }
   },
   {
     "firstName": "Ян",
@@ -130,7 +134,11 @@
       "../photographs/bulhak/images/bulhak_6.jpg",
       "../photographs/bulhak/images/bulhak_7.jpg"
     ],
-    "video" : "https://www.youtube.com/watch?v=OUl9EEOXAeY"
+    "video" : "https://www.youtube.com/watch?v=OUl9EEOXAeY",
+    "workPlaceCoordinats" : {
+      "x": "54.688041",
+      "y": "25.287327"
+    }
   },
   {
     "firstName": "Лев",
@@ -215,7 +223,11 @@
       "../photographs/dashkevich/images/dashkevich_7.jpg",
       "../photographs/dashkevich/images/dashkevich_8.jpg",
       "../photographs/dashkevich/images/dashkevich_9.jpg"
-    ]
+    ],
+    "workPlaceCoordinats" : {
+      "x": "53.894514",
+      "y": "27.544919"
+    }
   },
   {
     "firstName": "Георгий",
@@ -285,7 +297,11 @@
       "../photographs/lihtarovich/images/lihtarovich_8.jpg",
       "../photographs/lihtarovich/images/lihtarovich_9.jpg"
     ],
-    "video" : "https://www.youtube.com/watch?v=YEoAX0pQBsE"
+    "video" : "https://www.youtube.com/watch?v=YEoAX0pQBsE",
+    "workPlaceCoordinats" : {
+      "x": "53.876867",
+      "y": "27.531641"
+    }
   },
   {
     "firstName": "Михаил",
@@ -342,7 +358,11 @@
       "../photographs/anempodistov/images/anempodistov_3.jpg",
       "../photographs/anempodistov/images/anempodistov_4.jpg"
     ],
-    "video" : "https://www.youtube.com/watch?v=-A-1kSc2IXc"
+    "video" : "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    "workPlaceCoordinats" : {
+      "x": "53.909659",
+      "y": "27.581620"
+    }
   },
   {
     "firstName": "Артур",
@@ -402,6 +422,10 @@
       "../photographs/klinov/images/klinov_6.jpg",
       "../photographs/klinov/images/klinov_7.jpg"
     ],
-    "video" : "https://www.youtube.com/watch?v=jem-Rt_8O2w"
+    "video" : "https://www.youtube.com/watch?v=jem-Rt_8O2w",
+    "workPlaceCoordinats" : {
+      "x": "53.914052",
+      "y": "27.580730"
+    }
   }
 ]
