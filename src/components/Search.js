@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Select from 'react-select';
 
 import _ from 'lodash';
 
 import photographers from '../photographs/photographs';
+import SearchOptionsCreator from './SearchPage/SearchOptionsCreator'
 
 const surnameOptions = _.map(photographers, photographer => ({ value: photographer.lastName, label: photographer.lastName }));
 
@@ -16,8 +16,7 @@ class Search extends Component {
     filterBy: ''
   };
 
-  handleChange = (event) => {
-    const currentOption = event.target.getAttribute('data-option');
+  handleChange = (currentOption) => {
     switch (currentOption) {
       case 'location':
         this.setState({
@@ -33,30 +32,15 @@ class Search extends Component {
 
   handleFilter = (filterOption) => {
     this.setState({
-      filterBy: filterOption.value,
+      filterBy: filterOption,
     });
   };
 
   render() {
     return (
       <section className="search-page">
-        <h1>Search Page</h1>
-        <div className="search-page-option" onChange={this.handleChange}>
-          <label>
-            <span>Find by photographer surname</span>
-            <input type="radio" name="find-option" data-option="surname" defaultChecked={true}/>
-          </label>
-          <label>
-            <span>Find by photographer location</span>
-            <input type="radio" name="find-option" data-option="location"/>
-          </label>
-          {console.log(this.state)}
-        </div>
-        <Select
-          className="container photographer-select"
-          onChange={this.handleFilter}
-          options={this.state.searchOptions}
-        />
+        <SearchOptionsCreator {...this.state} onOptionsChange={this.handleChange} onFilterChange={this.handleFilter}/>
+        {console.log(this.state)}
       </section>
     )
   }
