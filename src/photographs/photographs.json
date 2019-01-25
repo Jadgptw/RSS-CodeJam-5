@@ -65,7 +65,8 @@
       "../photographs/borozna/images/borozna_5.jpg",
       "../photographs/borozna/images/borozna_6.jpg",
       "../photographs/borozna/images/borozna_7.jpg"
-    ]
+    ],
+    "video" : "https://www.youtube.com/watch?v=LbXo7o8XtQI"
   },
   {
     "firstName": "Ян",
@@ -128,7 +129,8 @@
       "../photographs/bulhak/images/bulhak_5.jpg",
       "../photographs/bulhak/images/bulhak_6.jpg",
       "../photographs/bulhak/images/bulhak_7.jpg"
-    ]
+    ],
+    "video" : "https://www.youtube.com/watch?v=OUl9EEOXAeY"
   },
   {
     "firstName": "Лев",
@@ -282,7 +284,8 @@
       "../photographs/lihtarovich/images/lihtarovich_7.jpg",
       "../photographs/lihtarovich/images/lihtarovich_8.jpg",
       "../photographs/lihtarovich/images/lihtarovich_9.jpg"
-    ]
+    ],
+    "video" : "https://www.youtube.com/watch?v=YEoAX0pQBsE"
   },
   {
     "firstName": "Михаил",
@@ -338,7 +341,8 @@
       "../photographs/anempodistov/images/anempodistov_2.jpg",
       "../photographs/anempodistov/images/anempodistov_3.jpg",
       "../photographs/anempodistov/images/anempodistov_4.jpg"
-    ]
+    ],
+    "video" : "https://www.youtube.com/watch?v=-A-1kSc2IXc"
   },
   {
     "firstName": "Артур",
@@ -397,6 +401,7 @@
       "../photographs/klinov/images/klinov_5.jpg",
       "../photographs/klinov/images/klinov_6.jpg",
       "../photographs/klinov/images/klinov_7.jpg"
-    ]
+    ],
+    "video" : "https://www.youtube.com/watch?v=jem-Rt_8O2w"
   }
 ]
