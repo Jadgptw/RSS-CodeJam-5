@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 
-import MemberView from '../../views/Search/MemberView';
+import MemberView from '../../views/searchPage/MemberView';
 
 const MemberListCreator = ({filterBy, photographers}) => {
   const filter = (filterBy) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SearchOptionsView from '../../views/Search/SearchOptionsView';
+import SearchOptionsView from '../../views/searchPage/SearchOptionsView';
 
 const SearchOptionsCreator = ({ searchOptions, onOptionsChange, onFilterChange }) => {
   const handleChange = (event) => {

@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 
 import photographers from '../photographs/photographs';
-import SearchOptionsCreator from './SearchPage/SearchOptionsCreator';
-import MembersListCreator from './SearchPage/MembersListCreator';
+import SearchOptionsCreator from './searchPage/SearchOptionsCreator';
+import MembersListCreator from './searchPage/MembersListCreator';
 
 const surnameOptions = _.map(photographers, photographer => ({ value: photographer.lastName, label: photographer.lastName }));
 
