@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "i18next": "^14.0.1",
+    "leaflet": "^1.4.0",
     "lodash": "^4.17.11",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
