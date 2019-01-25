@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 
 import photographers from '../photographs/photographs';
-import SearchOptionsCreator from './SearchPage/SearchOptionsCreator'
+import SearchOptionsCreator from './SearchPage/SearchOptionsCreator';
+import MembersListCreator from './SearchPage/MembersListCreator';
 
 const surnameOptions = _.map(photographers, photographer => ({ value: photographer.lastName, label: photographer.lastName }));
 
@@ -34,13 +35,14 @@ class Search extends Component {
     this.setState({
       filterBy: filterOption,
     });
+
   };
 
   render() {
     return (
       <section className="search-page">
         <SearchOptionsCreator {...this.state} onOptionsChange={this.handleChange} onFilterChange={this.handleFilter}/>
-        {console.log(this.state)}
+        <MembersListCreator {...this.state} photographers={photographers} />
       </section>
     )
   }
