@@ -3,7 +3,7 @@
     "firstName": "Михаил",
     "lastName": "Борозна",
     "location": "Минск",
-    "photo": "../photographs/borozna/photo/photo.jpg",
+    "photo": "./photographs/borozna/photo/photo.jpg",
     "bibliography":
     [
       {
@@ -58,13 +58,13 @@
       }
     ],
     "works": [
-      "../photographs/borozna/images/borozna_1.jpg",
-      "../photographs/borozna/images/borozna_2.jpg",
-      "../photographs/borozna/images/borozna_3.jpg",
-      "../photographs/borozna/images/borozna_4.jpg",
-      "../photographs/borozna/images/borozna_5.jpg",
-      "../photographs/borozna/images/borozna_6.jpg",
-      "../photographs/borozna/images/borozna_7.jpg"
+      "./photographs/borozna/images/borozna_1.jpg",
+      "./photographs/borozna/images/borozna_2.jpg",
+      "./photographs/borozna/images/borozna_3.jpg",
+      "./photographs/borozna/images/borozna_4.jpg",
+      "./photographs/borozna/images/borozna_5.jpg",
+      "./photographs/borozna/images/borozna_6.jpg",
+      "./photographs/borozna/images/borozna_7.jpg"
     ],
     "video" : "https://www.youtube.com/watch?v=LbXo7o8XtQI",
     "workPlaceCoordinats" : {
@@ -76,7 +76,7 @@
     "firstName": "Ян",
     "lastName": "Булгак",
     "location": "Вильнюс",
-    "photo": "../photographs/bulhak/photo/photo.jpg",
+    "photo": "./photographs/bulhak/photo/photo.jpg",
     "bibliography": [
       {
         "date": "6 октября 1876",
@@ -126,13 +126,13 @@
       }
     ],
     "works": [
-      "../photographs/bulhak/images/bulhak_1.jpg",
-      "../photographs/bulhak/images/bulhak_2.jpg",
-      "../photographs/bulhak/images/bulhak_3.jpg",
-      "../photographs/bulhak/images/bulhak_4.jpg",
-      "../photographs/bulhak/images/bulhak_5.jpg",
-      "../photographs/bulhak/images/bulhak_6.jpg",
-      "../photographs/bulhak/images/bulhak_7.jpg"
+      "./photographs/bulhak/images/bulhak_1.jpg",
+      "./photographs/bulhak/images/bulhak_2.jpg",
+      "./photographs/bulhak/images/bulhak_3.jpg",
+      "./photographs/bulhak/images/bulhak_4.jpg",
+      "./photographs/bulhak/images/bulhak_5.jpg",
+      "./photographs/bulhak/images/bulhak_6.jpg",
+      "./photographs/bulhak/images/bulhak_7.jpg"
     ],
     "video" : "https://www.youtube.com/watch?v=OUl9EEOXAeY",
     "workPlaceCoordinats" : {
@@ -144,7 +144,7 @@
     "firstName": "Лев",
     "lastName": "Дашкевич",
     "location": "Минск",
-    "photo": "../photographs/dashkevich/photo/photo.jpg",
+    "photo": "./photographs/dashkevich/photo/photo.jpg",
     "bibliography": [
       {
         "date": "12 февраля 1882",
@@ -214,15 +214,15 @@
       }
     ],
     "works": [
-      "../photographs/dashkevich/images/dashkevich_1.jpg",
-      "../photographs/dashkevich/images/dashkevich_2.jpg",
-      "../photographs/dashkevich/images/dashkevich_3.jpg",
-      "../photographs/dashkevich/images/dashkevich_4.jpg",
-      "../photographs/dashkevich/images/dashkevich_5.jpg",
-      "../photographs/dashkevich/images/dashkevich_6.jpg",
-      "../photographs/dashkevich/images/dashkevich_7.jpg",
-      "../photographs/dashkevich/images/dashkevich_8.jpg",
-      "../photographs/dashkevich/images/dashkevich_9.jpg"
+      "./photographs/dashkevich/images/dashkevich_1.jpg",
+      "./photographs/dashkevich/images/dashkevich_2.jpg",
+      "./photographs/dashkevich/images/dashkevich_3.jpg",
+      "./photographs/dashkevich/images/dashkevich_4.jpg",
+      "./photographs/dashkevich/images/dashkevich_5.jpg",
+      "./photographs/dashkevich/images/dashkevich_6.jpg",
+      "./photographs/dashkevich/images/dashkevich_7.jpg",
+      "./photographs/dashkevich/images/dashkevich_8.jpg",
+      "./photographs/dashkevich/images/dashkevich_9.jpg"
     ],
     "workPlaceCoordinats" : {
       "x": "53.894514",
@@ -233,7 +233,7 @@
     "firstName": "Георгий",
     "lastName": "Лихтарович",
     "location": "Минск",
-    "photo": "../photographs/lihtarovich/photo/photo.jpg",
+    "photo": "./photographs/lihtarovich/photo/photo.jpg",
     "bibliography": [
       {
         "date": "6 декабря 1947",
@@ -287,15 +287,15 @@
       }
     ],
     "works": [
-      "../photographs/lihtarovich/images/lihtarovich_1.jpg",
-      "../photographs/lihtarovich/images/lihtarovich_2.jpg",
-      "../photographs/lihtarovich/images/lihtarovich_3.jpg",
-      "../photographs/lihtarovich/images/lihtarovich_4.jpg",
-      "../photographs/lihtarovich/images/lihtarovich_5.jpg",
-      "../photographs/lihtarovich/images/lihtarovich_6.jpg",
-      "../photographs/lihtarovich/images/lihtarovich_7.jpg",
-      "../photographs/lihtarovich/images/lihtarovich_8.jpg",
-      "../photographs/lihtarovich/images/lihtarovich_9.jpg"
+      "./photographs/lihtarovich/images/lihtarovich_1.jpg",
+      "./photographs/lihtarovich/images/lihtarovich_2.jpg",
+      "./photographs/lihtarovich/images/lihtarovich_3.jpg",
+      "./photographs/lihtarovich/images/lihtarovich_4.jpg",
+      "./photographs/lihtarovich/images/lihtarovich_5.jpg",
+      "./photographs/lihtarovich/images/lihtarovich_6.jpg",
+      "./photographs/lihtarovich/images/lihtarovich_7.jpg",
+      "./photographs/lihtarovich/images/lihtarovich_8.jpg",
+      "./photographs/lihtarovich/images/lihtarovich_9.jpg"
     ],
     "video" : "https://www.youtube.com/watch?v=YEoAX0pQBsE",
     "workPlaceCoordinats" : {
@@ -307,7 +307,7 @@
     "firstName": "Михаил",
     "lastName": "Анемподистов",
     "location": "Минск",
-    "photo": "../photographs/anempodistov/photo/photo.jpg",
+    "photo": "./photographs/anempodistov/photo/photo.jpg",
     "bibliography": [
       {
         "date": "16 марта 1964",
@@ -353,10 +353,10 @@
       }
     ],
     "works": [
-      "../photographs/anempodistov/images/anempodistov_1.jpg",
-      "../photographs/anempodistov/images/anempodistov_2.jpg",
-      "../photographs/anempodistov/images/anempodistov_3.jpg",
-      "../photographs/anempodistov/images/anempodistov_4.jpg"
+      "./photographs/anempodistov/images/anempodistov_1.jpg",
+      "./photographs/anempodistov/images/anempodistov_2.jpg",
+      "./photographs/anempodistov/images/anempodistov_3.jpg",
+      "./photographs/anempodistov/images/anempodistov_4.jpg"
     ],
     "video" : "https://www.youtube.com/watch?v=-A-1kSc2IXc",
     "workPlaceCoordinats" : {
@@ -368,7 +368,7 @@
     "firstName": "Артур",
     "lastName": "Клинов",
     "location": "Минск",
-    "photo": "../photographs/klinov/photo/photo.jpg",
+    "photo": "./photographs/klinov/photo/photo.jpg",
     "bibliography": [
       {
         "date": "5 сентября 1965",
@@ -414,13 +414,13 @@
       }
     ],
     "works": [
-      "../photographs/klinov/images/klinov_1.jpg",
-      "../photographs/klinov/images/klinov_2.jpg",
-      "../photographs/klinov/images/klinov_3.jpg",
-      "../photographs/klinov/images/klinov_4.jpg",
-      "../photographs/klinov/images/klinov_5.jpg",
-      "../photographs/klinov/images/klinov_6.jpg",
-      "../photographs/klinov/images/klinov_7.jpg"
+      "./photographs/klinov/images/klinov_1.jpg",
+      "./photographs/klinov/images/klinov_2.jpg",
+      "./photographs/klinov/images/klinov_3.jpg",
+      "./photographs/klinov/images/klinov_4.jpg",
+      "./photographs/klinov/images/klinov_5.jpg",
+      "./photographs/klinov/images/klinov_6.jpg",
+      "./photographs/klinov/images/klinov_7.jpg"
     ],
     "video" : "https://www.youtube.com/watch?v=jem-Rt_8O2w",
     "workPlaceCoordinats" : {
