@@ -17,6 +17,7 @@ const MemberListCreator = ({filterBy, photographers}) => {
 
   return (
     <section className="search-page-photographers">
+      <h3>Список фотографов</h3>
       <ul className="search-page-photographers-list">
         {_.map(filteredPhotographers, photographer =>
           <MemberView key={`${photographer.firstName}_${photographer.lastName}`} {...photographer}/>

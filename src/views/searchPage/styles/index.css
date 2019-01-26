@@ -1,0 +1,83 @@
+.search-page {
+  margin: 0 auto;
+  padding: 10px;
+
+  text-align: center;
+
+  user-select: none;
+}
+.search-page h2{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.search-page-option {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.search-page-option label {
+  display: block;
+  padding: 0 20px;
+}
+
+.search-page-photographer-filter {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  color: #434343;
+}
+
+.search-page-photographers {
+  text-align: center;
+}
+
+.search-page-photographers h3{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.search-page-select-photographer {
+  padding: 5px;
+
+  color: #f2f2f2;
+  font: inherit;
+  font-size: 20px;
+
+  border: 1px solid #f2f2f2;
+
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.search-page-select-photographer:hover {
+  cursor: pointer;
+
+  color: #434343;
+
+  background-color: #f2f2f2;
+}
+
+.search-page-photographers-list {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.search-page-photographers-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+  text-align: left;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.search-page-photographers-list li:last-child {
+  border: none;
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
 
-const SearchOptionsView = ({ firstName, lastName }) => {
+const SearchOptionsView = ({ firstName, lastName, location }) => {
   return (
     <li>
-      {firstName} {lastName}
-      <Link to={`member/${lastName}/${firstName}`}>
-        <button className="search-page-select-photographer" type="button">Показать</button>
+      <span>{firstName} {lastName}, {location}</span>
+      <Link className="search-page-select-photographer" to={`member/${lastName}/${firstName}`}>
+        Показать
       </Link>
     </li>
   )
