@@ -1,0 +1,45 @@
+.member-page {
+  margin: 0 auto;
+  padding: 10px;
+
+  text-align: center;
+
+  user-select: none;
+}
+
+.member-page h1,
+.member-page h2{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.member-photo,
+.member-page-work-location,
+.member-page-video{
+  margin-bottom: 20px;
+}
+
+.member-page-timeline-action {
+  color: #f2f2f2;
+}
+
+.member-page-show-video-button {
+  padding: 5px;
+
+  color: #f2f2f2;
+  font: inherit;
+  font-size: 20px;
+
+  border: 1px solid #f2f2f2;
+
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.member-page-show-video-button:hover {
+  cursor: pointer;
+
+  color: #434343;
+
+  background-color: #f2f2f2;
+}
