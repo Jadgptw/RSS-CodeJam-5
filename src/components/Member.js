@@ -1,12 +1,15 @@
 import React from "react";
+
+import _ from "lodash";
+
+import photographs from "../photographs/photographs.json";
+import "../views/memberPage/styles/index.css";
+import "./MemberPage/member.css";
+
 import TimeLine from "./MemberPage/TimeLine";
 import Video from "./MemberPage/Video";
 import Map from "./MemberPage/Map";
-import "../views/memberPage/styles/index.css";
-import _ from "lodash";
-import photographs from "../photographs/photographs.json";
 import PhotoGallery from "./MemberPage/PhotoGallery";
-import "./member.css";
 
 const Member = ({ match }) => {
   const { firstName, lastName } = match.params;
@@ -15,7 +18,7 @@ const Member = ({ match }) => {
     lastName,
     firstName
   });
-  const { photo, bibliography, works } = photograph;
+  const { photo, bibliography, works, participations } = photograph;
   return (
     <section className="member-page">
       <h1>
@@ -42,10 +45,14 @@ const Member = ({ match }) => {
         <h2>Видео</h2>
         <Video {...photograph} />
       </section>
-      <PhotoGallery photos={works} />
       <section>
-        <h2>список произведений</h2>
-        <ul>
+        <h2>Фотогалерея</h2>
+        <PhotoGallery photos={works} />
+      </section>
+
+      <section className="member-page-video">
+        <h2>Список произведений</h2>
+        <ul className="member-page-works-list">
           {participations.map(({ date, action }) => (
             <li key={`${action}`} className="worksListItem">
               <span>{date}</span>

@@ -1,11 +1,12 @@
 import React from "react";
 import Gallery from "react-photo-gallery";
 import Lightbox from "react-images";
+import _ from "lodash";
 
 class PhotoGallery extends React.Component {
   state = { currentImage: 0 };
 
-  openLightbox = obj => {
+  openLightbox = (event, obj) => {
     this.setState({
       currentImage: obj.index,
       lightboxIsOpen: true
@@ -30,11 +31,18 @@ class PhotoGallery extends React.Component {
 
   render() {
     const { photos } = this.props;
+
+    const srcPhotos = _.map(photos, photo => ({
+      src: photo,
+      width: 4,
+      height: 3
+    }));
+
     return (
       <section>
-        <Gallery photos={photos} onClick={this.openLightbox} />
+        <Gallery photos={srcPhotos} onClick={this.openLightbox} />
         <Lightbox
-          images={photos}
+          images={srcPhotos}
           onClose={this.closeLightbox}
           onClickPrev={this.gotoPrevious}
           onClickNext={this.gotoNext}
