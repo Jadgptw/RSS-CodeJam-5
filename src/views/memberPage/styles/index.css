@@ -13,9 +13,14 @@
   margin-bottom: 20px;
 }
 
+.member-page h1 {
+  margin-top: 80px;
+}
+
 .member-photo,
 .member-page-work-location,
-.member-page-video{
+.member-page-video,
+.member-page-photo {
   margin-bottom: 20px;
 }
 
@@ -42,4 +47,14 @@
   color: #434343;
 
   background-color: #f2f2f2;
+}
+
+.member-page-navigation .search-button {
+  display: none;
+}
+
+.worksListItem {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
 }

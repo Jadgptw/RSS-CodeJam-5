@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import _ from 'lodash';
+
+import Navigation from './Navigation';
+import Background from '../views/homePage/Background'
 
 import photographers from '../photographs/photographs';
 import SearchOptionsCreator from './searchPage/SearchOptionsCreator';
@@ -40,11 +43,15 @@ class Search extends Component {
 
   render() {
     return (
-      <section className="search-page container">
-        <h2>Фотографы Беларуси</h2>
-        <SearchOptionsCreator {...this.state} onOptionsChange={this.handleChange} onFilterChange={this.handleFilter}/>
-        <MembersListCreator {...this.state} photographers={photographers} />
-      </section>
+      <Fragment>
+        <Background/>
+        <Navigation/>
+        <section className="search-page container background-BlackLine">
+          <h2>Фотографы Беларуси</h2>
+          <SearchOptionsCreator {...this.state} onOptionsChange={this.handleChange} onFilterChange={this.handleFilter}/>
+          <MembersListCreator {...this.state} photographers={photographers} />
+        </section>
+      </Fragment>
     )
   }
 }
