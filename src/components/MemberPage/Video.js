@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../node_modules/react-modal-video/scss/modal-video.scss';
+import '../node_modules/react-modal-video/css/modal-video.min.css';
 import ModalVideo from 'react-modal-video'
 
 class Video extends Component{
-    constructor (props) {
-        super(props)
+    constructor () {
+        super()
         this.state = {
           isOpen: false
         }
@@ -14,14 +14,12 @@ class Video extends Component{
         const openModal = () => {
             this.setState({isOpen: true})
         }
-        // this.props.video it's url of a youtube video
-        const url = this.props.video;
-        const videoId = url.substring(url.indexOf('=')+1);
-        console.log(videoId);
+        const { firstName, lastName, video } = this.props;
+        const videoId = video.substring(video.indexOf('=')+1);
         return(
             <div>
                 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={videoId} onClose={() => this.setState({isOpen: false})} />
-                <button onClick={openModal}>Open</button>
+                <button onClick={openModal} className="member-page-show-video-button">Посмотреть видео с ${firstName} ${lastName}</button>
             </div>
         ) 
       }

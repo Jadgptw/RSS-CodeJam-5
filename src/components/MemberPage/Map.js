@@ -11,18 +11,19 @@ L.Icon.Default.mergeOptions({
 
 class Map extends Component {
     componentDidMount(){
-        //x,y coordinate of authors workplace
-        let mymap = L.map('map').setView([this.props.x, this.props.y], 10);
+        const { x, y } = this.props.workPlaceCoordinats;
+        const { firstName, lastName } = this.props;
+
+        const mymap = L.map('map').setView([x, y], 10);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
             maxZoom: 18,
         }).addTo(mymap);
-        let marker = L.marker([this.props.x, this.props.y]).addTo(mymap);
-        //name - authors name
-        marker.bindPopup(`<b>Here it is!</b><br>This is the main place were ${this.props.name} works.`).openPopup();
+        const marker = L.marker([x, y]).addTo(mymap);
+        marker.bindPopup(`<b>Отметка на карте</b><br>Основное место, где работал ${firstName} ${lastName}.`).openPopup();
     }
     render(){
-        return <div id="map" style={{height:'400px', width: '400px'}}></div>
+        return <div id="map" style={{height:'400px', width: '100%'}}>Карта с местом работы</div>
       }
     }
 
