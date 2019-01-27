@@ -1,14 +1,14 @@
 import React from 'react';
 import '../homePage/styles/header.css'
 import LanguagePanel from './LanguagePanel';
+import siteLogo from './homeImages/siteLogo.png';
 
 function Header(props){
-    const logo = props.logo;
     return (
         <header>
             <div className="headerInside">
                 <div className="iconWrapper">
-                    <img src={logo}/>
+                    <img src={siteLogo}/>
                 </div>
                 <div className="headMenu">
                     <a className="menu-item">Search</a>

@@ -1,9 +1,9 @@
 import React from 'react';
 import '../homePage/styles/DailyPhotographer.css'
+import avatarOfAuthor from './homeImages/Jan_Bulhak.jpg';
 
 
 function DailyPhotographer(props){
-    const avatarImg = props.avatarImg;
     //const authorName;
     return (
         <div className="dailyPhotographer-block">
@@ -12,7 +12,7 @@ function DailyPhotographer(props){
                 <div className="authorAvatar">
                     <div className="author-name">Jan Bułhak</div>
                     <div className="author-photo-wrap">
-                        <img className="author-photo" src={avatarImg}/>
+                        <img className="author-photo" src={avatarOfAuthor}/>
                     </div>
                 </div>
                 <div className="author-information">
