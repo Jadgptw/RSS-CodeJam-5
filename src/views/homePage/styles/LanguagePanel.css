@@ -1,0 +1,27 @@
+.LanguagePanel {
+    display: flex;
+    margin: 0 13px;
+    padding: 0;
+    list-style: none;
+    border-left: solid 2px #bebebe;
+    border-right: solid 2px #bebebe;
+}
+
+.LanguagePanelItem {
+    margin: 0 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #eaeaea;
+    transition: 0.4s;
+    cursor: pointer;
+}   
+
+@media (max-width: 640px) {
+    .LanguagePanelItem {
+        font-size: 20px;
+    }
+}
+
+.LanguagePanelItem:hover {
+    color: #ffd45f;
+}
