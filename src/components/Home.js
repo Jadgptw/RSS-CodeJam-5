@@ -1,22 +1,25 @@
 import React from 'react';
-import Header from '../views/homePage/header';
+
 import Background from '../views/homePage/Background';
 import '../views/homePage/styles/App.css';
+import '../views/homePage/styles/header.css';
+
+import Navigation from './Navigation';
 import LandingBlock from '../views/homePage/LandingBlock';
-import DailyPhotographer from '../views/homePage/DailyPhotographer';
+import DailyPhotographerCreator from './homePage/DailyPhotographerCreator';
 import About from '../views/homePage/About';
 import Team from '../views/homePage/Team';
 import Footer from '../views/homePage/Footer';
 
 const Home = () => (
   <div className="App">
-    <Header/>
-    <Background/>
-    <LandingBlock/>
-    <DailyPhotographer/>
+    <Navigation/>
+    <Background />
+    <LandingBlock />
+    <DailyPhotographerCreator />
     <About/>
-    <Team/>
-    <Footer/>
+    <Team />
+    <Footer />
   </div>
 );
 

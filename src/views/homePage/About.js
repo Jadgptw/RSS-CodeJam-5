@@ -6,9 +6,9 @@ function About(){
     return (
         <div className="about-block">
             <div className="about-block-wrapper">
-                <h2 className="about-title">About Project</h2>
-                <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p className="about-after-text">Duis aute irure.</p>
+                <h2 className="section-title">О проекте</h2>
+                <p className="about-text">Мы команда начинающих веб разработчиков решили сделать небольшой портал посвящённый фотографам беларуси. Всего нас пять человек и наша задача заключалась в том, чтобы в короткие сроки реализовать простой информационный портал, на котором люди смогут получить информацию о самых знаменитых белоруских фотографах. Каждый из нас имел чётко поставленную задачу, которую он должен выполнить и мы считаем что нам это удалось.</p>
+                <p className="about-after-text">Надеемся вам понравиться.</p>
             </div>
         </div>
     )

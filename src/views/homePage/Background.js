@@ -1,14 +1,13 @@
 import React from 'react';
 import '../homePage/styles/background.css';
-import backgroundImage from './homeImages/homePageBG.jpg';
 
-function Background(){
-    return (
-        <div className="background-Wrapper">
-            <div className="background-BlackLine"></div>
-            <img className="background-Image" src={backgroundImage}></img>
-        </div>
-    )
-}
+import backgroundImage from './images/homePageBG.jpg';
+
+const Background =() => (
+  <div className="background-Wrapper">
+    <div className="background-BlackLine"></div>
+    <img className="background-Image" src={backgroundImage} alt="background"/>
+  </div>
+);
 
 export default Background;

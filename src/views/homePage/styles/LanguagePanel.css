@@ -16,6 +16,12 @@
     cursor: pointer;
 }   
 
+@media (max-width: 640px) {
+    .LanguagePanelItem {
+        font-size: 20px;
+    }
+}
+
 .LanguagePanelItem:hover {
     color: #ffd45f;
 }
