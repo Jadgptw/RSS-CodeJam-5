@@ -16,7 +16,6 @@ class Video extends Component{
         }
         const { firstName, lastName, video } = this.props;
         const videoId = video.substring(video.indexOf('=')+1);
-        console.log(videoId);
         return(
             <div>
                 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={videoId} onClose={() => this.setState({isOpen: false})} />
