@@ -1,0 +1,92 @@
+.dailyPhotographer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.daily-Photographer-title {
+    margin: 60px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;   
+    font-size: 50px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.dailyPhotographer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 970px;
+    min-height: 540px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.authorAvatar{
+    width: 330px;
+}
+
+.author-name{
+    font-weight: 500;
+    font-size: 40px;
+    color: #f2f2f2;
+}
+
+.author-photo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 330px;
+    height: 414px;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+.author-photo{
+    height: 100%;
+}
+
+.author-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 560px;
+    margin-left: 40px;
+}
+
+.author-life-duration {
+    font-weight: 500;
+    color: #f2f2f2;
+    font-size: 32px;
+}
+
+.about-author {
+    font-weight: 400;
+    color: #d4d4d4;
+    font-size: 24px;
+    text-align: left;
+}
+
+.show-more-about-author {
+    margin-top: 20px;
+    width: 170px;
+    height: 68px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;   
+    font-size: 36px;
+    line-height: 60px;
+    color: #f2f2f2;
+    border: solid 1px white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.show-more-about-author:hover {
+    color: rgb(255, 222, 112);
+    border: solid 1px rgb(255, 222, 112);
+}
