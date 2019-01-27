@@ -7,13 +7,13 @@ class TimeLine extends Component {
 
     return (
       <Timeline lineColor={"#ddd"}>
-        {bibliography.map(({ firstName, lastName, date, action }) => (
+        {bibliography.map(({ date, action }) => (
           <TimelineItem
-            key={`${firstName}_${lastName}`}
+            key={`${action}`}
             dateText={date}
             style={{ color: "#e86971" }}
           >
-            <span>{action}</span>
+            <span className="member-page-timeline-action">{action}</span>
           </TimelineItem>
         ))}
       </Timeline>
