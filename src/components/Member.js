@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TimeLine from "./MemberPage/TimeLine";
-//import Video from "./MemberPage/Video";
-//import Map from "./MemberPage/Map";
+import Video from "./MemberPage/Video";
+import Map from "./MemberPage/Map";
 import _ from "lodash";
 import photographs from "../photographs/photographs.json";
 
@@ -21,7 +21,7 @@ class Member extends Component {
       lastName: lastName,
       firstName: firstName
     });
-    const { photo, bibliography } = photograph;
+    const { photo, bibliography} = photograph;
     return (
       <section className="member-page">
         <h1>
@@ -29,8 +29,10 @@ class Member extends Component {
         </h1>
         <img src={photo} alt={lastName} />
         <TimeLine bibliography={bibliography} />
-        {/* <Video /> */}
-        {/* <Map /> */}
+        <h2>Видео</h2>
+        <Video {...photograph}/>
+        <h2>Основное место работы</h2> 
+        <Map {...photograph}/> 
       </section>
     );
   }
