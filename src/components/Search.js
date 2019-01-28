@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import i18n from "i18next";
 import { withNamespaces } from 'react-i18next';
 
 import _ from 'lodash';
@@ -22,6 +21,7 @@ class Search extends Component {
     filterBy: ''
   };
 
+  
   handleChange = (currentOption) => {
     switch (currentOption) {
       case 'location':
@@ -45,6 +45,14 @@ class Search extends Component {
 
   render() {
     const { t } = this.props;
+
+    _.forEach(surnameOptions, option => {
+      option.label = t(option.value);
+    });
+
+    _.forEach(locationOptions, option => {
+      option.label = t(option.value);
+    });
 
     return (
       <Fragment>

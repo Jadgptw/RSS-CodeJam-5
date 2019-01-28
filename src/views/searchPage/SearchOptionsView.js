@@ -26,4 +26,5 @@ const SearchOptionsView = ({ searchOptions, handleChange, handleFilter, t }) => 
   )
 };
 
+
 export default withNamespaces()(SearchOptionsView);
