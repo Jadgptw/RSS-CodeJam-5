@@ -1,4 +1,4 @@
-import i18n from "i18next";
+import i18n from 'i18next';
 import { reactI18nextModule } from "react-i18next";
 
 import translationEN from '../locales/en/photographs.json';

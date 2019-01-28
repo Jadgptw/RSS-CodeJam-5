@@ -2,7 +2,7 @@ import React from 'react';
 
 import SearchOptionsView from '../../views/searchPage/SearchOptionsView';
 
-const SearchOptionsCreator = ({ searchOptions, onOptionsChange, onFilterChange, t }) => {
+const SearchOptionsCreator = ({ searchOptions, onOptionsChange, onFilterChange }) => {
   const handleChange = (event) => {
     const currentOption = event.target.getAttribute('data-option');
     onOptionsChange(currentOption);

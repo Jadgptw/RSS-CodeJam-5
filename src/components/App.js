@@ -6,10 +6,6 @@ import Member from "./Member";
 import Search from "./Search";
 
 class App extends Component{
-  state = {
-    language: 'en'
-  };
-
   render() {
     return (
       <HashRouter>

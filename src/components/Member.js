@@ -1,17 +1,17 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react';
 import { withNamespaces } from 'react-i18next';
 
-import _ from "lodash";
+import _ from 'lodash';
 
-import photographs from "../photographs/photographs.json";
-import "../views/memberPage/styles/index.css";
+import photographs from '../photographs/photographs.json';
+import '../views/memberPage/styles/index.css';
 
 import Background from '../views/homePage/Background'
 import Navigation from './Navigation';
 import TimeLine from "./MemberPage/TimeLine";
-import Video from "./MemberPage/Video";
-import Map from "./MemberPage/Map";
-import PhotoGallery from "./MemberPage/PhotoGallery";
+import Video from './MemberPage/Video';
+import Map from './MemberPage/Map';
+import PhotoGallery from './MemberPage/PhotoGallery';
 
 const Member = ({ match, t }) => {
   const { firstName, lastName } = match.params;
@@ -21,6 +21,7 @@ const Member = ({ match, t }) => {
     firstName
   });
   const { photo, bibliography, works, participations } = photograph;
+
   return (
     <Fragment>
       <Background/>
@@ -52,6 +53,7 @@ const Member = ({ match, t }) => {
           <h2>{t("Видео")}</h2>
           <Video {...photograph} />
         </section>
+
         <section className="member-page-photo">
           <h2>{t("Фотогалерея")}</h2>
           <PhotoGallery photos={works} />
