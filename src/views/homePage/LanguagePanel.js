@@ -2,7 +2,7 @@ import React from 'react';
 import i18n from '../../components/translator';
 import '../homePage/styles/LanguagePanel.css'
 
-function LanguagePanel(props){
+const LanguagePanel = () => {
 	const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   }
