@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { withNamespaces } from 'react-i18next';
 
 import _ from 'lodash';
 
@@ -20,6 +21,7 @@ class Search extends Component {
     filterBy: ''
   };
 
+  
   handleChange = (currentOption) => {
     switch (currentOption) {
       case 'location':
@@ -42,12 +44,22 @@ class Search extends Component {
   };
 
   render() {
+    const { t } = this.props;
+
+    _.forEach(surnameOptions, option => {
+      option.label = t(option.value);
+    });
+
+    _.forEach(locationOptions, option => {
+      option.label = t(option.value);
+    });
+
     return (
       <Fragment>
         <Background/>
         <Navigation/>
         <section className="search-page container background-BlackLine">
-          <h2>Фотографы Беларуси</h2>
+          <h2>{t("Фотографы Беларуси")}</h2>
           <SearchOptionsCreator {...this.state} onOptionsChange={this.handleChange} onFilterChange={this.handleFilter}/>
           <MembersListCreator {...this.state} photographers={photographers} />
         </section>
@@ -56,4 +68,4 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export default withNamespaces()(Search);

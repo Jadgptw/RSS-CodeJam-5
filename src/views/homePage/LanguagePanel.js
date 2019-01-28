@@ -1,13 +1,17 @@
 import React from 'react';
+import i18n from '../../components/translator';
 import '../homePage/styles/LanguagePanel.css'
 
-function LanguagePanel(props){
+const LanguagePanel = () => {
+	const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
     
     return (
         <ul className="LanguagePanel">
-            <li className="LanguagePanelItem">EN</li>
-            <li className="LanguagePanelItem">BY</li>
-            <li className="LanguagePanelItem">RU</li>
+            <li onClick={() => changeLanguage('en')} className="LanguagePanelItem">EN</li>
+            <li onClick={() => changeLanguage('by')} className="LanguagePanelItem">BY</li>
+            <li onClick={() => changeLanguage('ru')} className="LanguagePanelItem">RU</li>
         </ul>
     )
 }
