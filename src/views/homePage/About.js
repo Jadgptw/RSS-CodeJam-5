@@ -1,17 +1,18 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import '../homePage/styles/About.css';
 
 
-function About(){
+function About({ t }){
     return (
         <div className="about-block">
             <div className="about-block-wrapper">
-                <h2 className="section-title">О проекте</h2>
-                <p className="about-text">Мы, команда начинающих веб-разработчиков, решили сделать небольшой портал, посвящённый фотографам Беларуси. Всего нас пять человек и наша задача заключалась в том, чтобы в короткие сроки реализовать простой информационный портал, на котором люди смогут получить информацию о самых знаменитых белоруских фотографах. Каждый из нас имел чётко поставленную задачу, которую он должен был выполнить, и мы считаем, что нам это удалось.</p>
-                <p className="about-after-text">Надеемся вам понравится.</p>
+                <h2 className="section-title">{t("О проекте")}</h2>
+                <p className="about-text">{t("about-text")}</p>
+                <p className="about-after-text">{t("about-after-text")}</p>
             </div>
         </div>
     )
 }
 
-export default About;
+export default withNamespaces()(About);

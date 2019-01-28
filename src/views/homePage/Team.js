@@ -1,4 +1,5 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 
 import _ from 'lodash';
 
@@ -45,13 +46,13 @@ const contributors = [
   }
 ];
 
-const Team = () => (
+const Team = ({ t }) => (
   <div className="team-block">
-    <h2 className="section-title">Наша команда</h2>
+    <h2 className="section-title">{t("our-team")}</h2>
     <div className="team-wrapper">
       { _.map(contributors, contributor => <Person {...contributor}/>) }
     </div>
   </div>
 );
 
-export default Team;
+export default withNamespaces()(Team);

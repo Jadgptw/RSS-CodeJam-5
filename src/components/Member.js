@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { withNamespaces } from 'react-i18next';
 
 import _ from "lodash";
 
@@ -12,7 +13,7 @@ import Video from "./MemberPage/Video";
 import Map from "./MemberPage/Map";
 import PhotoGallery from "./MemberPage/PhotoGallery";
 
-const Member = ({ match }) => {
+const Member = ({ match, t }) => {
   const { firstName, lastName } = match.params;
 
   const photograph = _.find(photographs, {
@@ -28,41 +29,41 @@ const Member = ({ match }) => {
       </div>
       <section className="member-page container background-BlackLine">
         <h1>
-          {firstName} {lastName}
+          {t(firstName)} {t(lastName)}
         </h1>
         <img
           className="member-photo"
           src={photo}
-          alt={lastName}
+          alt={t(lastName)}
           width={250}
           height={300}
         />
         <section className="member-page-bibliography">
-          <h2>Библиография</h2>
+          <h2>{t("bibliography")}</h2>
           <TimeLine bibliography={bibliography} />
         </section>
 
         <section className="member-page-work-location">
-          <h2>Основное место работы</h2>
+          <h2>{t("Основное место работы")}</h2>
           <Map {...photograph} />
         </section>
 
         <section className="member-page-video">
-          <h2>Видео</h2>
+          <h2>{t("Видео")}</h2>
           <Video {...photograph} />
         </section>
         <section className="member-page-photo">
-          <h2>Фотогалерея</h2>
+          <h2>{t("Фотогалерея")}</h2>
           <PhotoGallery photos={works} />
         </section>
 
         <section className="member-page-works">
-          <h2>Список произведений</h2>
+          <h2>{t("Список произведений")}</h2>
           <ul className="member-page-works-list">
             {participations.map(({ date, action }) => (
               <li key={`${action}`} className="worksListItem">
-                <span>{date}</span>
-                <span>{action}</span>
+                <span>{t(date)}</span>
+                <span>{t(action)}</span>
               </li>
             ))}
           </ul>
@@ -72,4 +73,4 @@ const Member = ({ match }) => {
   );
 };
 
-export default Member;
+export default withNamespaces()(Member);

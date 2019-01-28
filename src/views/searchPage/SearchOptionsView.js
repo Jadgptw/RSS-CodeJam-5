@@ -1,18 +1,19 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import Select from 'react-select';
 
 import './styles/index.css';
 
-const SearchOptionsView = ({ searchOptions, handleChange, handleFilter }) => {
+const SearchOptionsView = ({ searchOptions, handleChange, handleFilter, t }) => {
   return (
     <section className="search-page-filter">
       <div className="search-page-option" onChange={handleChange}>
         <label>
-          <span>Фильтровать по имени</span>
+          <span>{t("filter-by-name")}</span>
           <input type="radio" name="find-option" data-option="surname" defaultChecked={true}/>
         </label>
         <label>
-          <span>Фильтровать по месту работы</span>
+          <span>{t("filter-by-city")}</span>
           <input type="radio" name="find-option" data-option="location"/>
         </label>
       </div>
@@ -25,4 +26,4 @@ const SearchOptionsView = ({ searchOptions, handleChange, handleFilter }) => {
   )
 };
 
-export default SearchOptionsView;
+export default withNamespaces()(SearchOptionsView);

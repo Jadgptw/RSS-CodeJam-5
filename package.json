@@ -9,6 +9,7 @@
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-i18next": "^9.0.9",
     "react-images": "^0.5.19",
     "react-modal-video": "^1.2.1",
     "react-photo-gallery": "^6.3.0",

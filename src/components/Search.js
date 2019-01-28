@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from 'react';
+import i18n from "i18next";
+import { withNamespaces } from 'react-i18next';
 
 import _ from 'lodash';
 
@@ -42,12 +44,14 @@ class Search extends Component {
   };
 
   render() {
+    const { t } = this.props;
+
     return (
       <Fragment>
         <Background/>
         <Navigation/>
         <section className="search-page container background-BlackLine">
-          <h2>Фотографы Беларуси</h2>
+          <h2>{t("Фотографы Беларуси")}</h2>
           <SearchOptionsCreator {...this.state} onOptionsChange={this.handleChange} onFilterChange={this.handleFilter}/>
           <MembersListCreator {...this.state} photographers={photographers} />
         </section>
@@ -56,4 +60,4 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export default withNamespaces()(Search);

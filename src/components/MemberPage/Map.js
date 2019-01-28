@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withNamespaces } from 'react-i18next';
 import L from '../../../node_modules/leaflet/dist/leaflet'
 import '../../../node_modules/leaflet/dist/leaflet.css';
 
@@ -12,7 +13,7 @@ L.Icon.Default.mergeOptions({
 class Map extends Component {
     componentDidMount(){
         const { x, y } = this.props.workPlaceCoordinats;
-        const { firstName, lastName } = this.props;
+        const { firstName, lastName, t } = this.props;
 
         const mymap = L.map('map').setView([x, y], 10);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -20,11 +21,11 @@ class Map extends Component {
             maxZoom: 18,
         }).addTo(mymap);
         const marker = L.marker([x, y]).addTo(mymap);
-        marker.bindPopup(`<b>Отметка на карте</b><br>Основное место, где работал ${firstName} ${lastName}.`).openPopup();
+        marker.bindPopup('<b>' + t('Отметка на карте') + '</b><br>' + t('Основное место, где работал ') + t(firstName) + ' ' + t(lastName) + '.').openPopup();
     }
     render(){
         return <div id="map" style={{height:'400px', width: '100%'}}>Карта с местом работы</div>
       }
     }
 
-export default Map;
+export default withNamespaces()(Map);
